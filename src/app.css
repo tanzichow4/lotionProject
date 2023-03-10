@@ -36,6 +36,7 @@ button:hover {
 
 .below_header{
   display: flex;
+  border-top: 3px solid  rgb(171, 97, 228);
 }
 
 
@@ -162,11 +163,12 @@ textarea {
   border:none;
   width: 95px;
   border-bottom: 3px solid rgb(171, 97, 228);
+  border-top: 3px solid  rgb(171, 97, 228);
 }
 
 .button:hover{
   background: rgb(171, 97, 228);
-  color: white;
+  color: black;
 }
 
 .time{
@@ -206,6 +208,10 @@ textarea {
   height: 1000px;
 }
 
-#addButton{
-  height: 20px;
+#editButton:hover, 
+#saveButton:hover,
+#deleteButton:hover{
+  background-color: rgb(171, 97, 228);
+  color: black;
+
 }
