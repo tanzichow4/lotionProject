@@ -15,7 +15,7 @@ const Sidebar = ({
       <div className={`sidebar ${toggle_sidebar ? "hide" : ""}`}>
         <div className="sidebarHeader">
           <h1>Notes</h1>
-          <button onClick={onAddNote}>&#43;</button>
+          <button className="sidebarButton" id = "addButton" onClick={onAddNote}>&#43;</button>
         </div>
         <div className="sidebarNotes">
           {sortedNotes.map(({ id, title, body, lastModified }) => (

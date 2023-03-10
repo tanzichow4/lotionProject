@@ -198,6 +198,14 @@ textarea {
   padding-top: 5px;
 }
 
+.sidebarButton:hover{
+  color: rgb(171, 97, 228);
+}
+
 #edit{
   height: 1000px;
+}
+
+#addButton{
+  height: 20px;
 }
