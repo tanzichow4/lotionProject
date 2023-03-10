@@ -2,8 +2,9 @@ body,
 .App {
   width: 100%;
   height: 100vh;
-
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .header{
   display: flex;
   justify-content: center;
@@ -13,7 +14,7 @@ body,
   width: 100%;
   height: 60px;
   margin-top: 40px;
-  border-bottom: 3px solid lightgray;
+  border-bottom: 3px solid rgb(171, 97, 228);
 }
 .header h1{
   margin: 0;
@@ -24,14 +25,13 @@ body,
   margin-top:0 ;
 }
 
-
-
 button {
   background: none;
   cursor: pointer;
 }
+
 button:hover {
-  color: lightblue;
+  color: lightgreen;
 }
 
 .below_header{
@@ -39,73 +39,69 @@ button:hover {
 }
 
 
-.app-sidebar {
+.sidebar  {
   width: 30%;
   height: 100vh;
-  border-right: 3px solid lightgray;
+  border-right: 3px solid rgb(171, 97, 228);
   margin-top: 70px;
-
-
 }
 
-.app-sidebar.hide{
+.sidebar .hide{
   display: none;
 }
 
-.app-sidebar-header{
+.sidebarHeader{
   display: flex;
   justify-content: space-between;
   padding: 25px;
-  border-bottom: 3px solid lightgray;
+  border-bottom: 3px solid rgb(171, 97, 228);
 }
-.app-sidebar-header button{
-  font-size: 35px;
+.sidebarHeader button{
+  font-size: 100px;
 }
-.app-sidebar-header h1 {
+.sidebarHeader h1 {
   margin: 0;
 }
 
-.app-sidebar-notes {
+.sidebarNotes {
   height: calc(100vh - 40px);
   overflow-y: scroll;
 }
-.app-sidebar-note {
+.individualNoteSidebar {
   padding: 25px;
   cursor: pointer;
-  border-bottom: 3px solid lightgray;
+  border-bottom: 3px solid rgb(171, 97, 228);
 }
-.sidebar-note-title {
+.individualNoteSidebarTitle {
   display: flex;
   justify-content: space-between;
 }
 
 
-.app-sidebar-note p {
+.individualNoteSidebar p {
   margin: 10px 0;
 }
-.app-sidebar-note small {
+.individualNoteSidebar small {
   display: block;
   color: #999;
   text-align: left;
 }
 
-.app-sidebar-note:hover {
+.individualNoteSidebar:hover {
   background: #ddd;
 }
-.app-sidebar-note.active,
-.app-sidebar-note.active small {
+.individualNoteSidebar.active,
+.individualNoteSidebar.active small {
   background: #08c;
   color: white;
 }
 
-
-
-.app-main {
+.mainApp {
   flex: 1;
   height: 100vh;
   margin-top: 77px;
 }
-.app-main-note-edit,
+
 .app-main-note-preview {
   height: 50vh;
 }
@@ -119,47 +115,45 @@ button:hover {
   color: #999;
 }
 
-.app-main-note-edit {
+.noteEdit {
   height: 350px;
   overflow-y: scroll;
 }
 
-.app-main-note-edit input,
+.noteEdit input,
 textarea {
-  border: 3px solid lightgray;
+  border: 3px solid rgb(171, 97, 228);
   width: 80%;
   resize: none;
   font-size: inherit;
   font-family: inherit;
 }
-.app-main-note-edit input {
+.noteEdit input {
   height: 40px;
   font-size: 40px;
   border: none;
   padding-bottom: 7px;
   padding-top: 0px;
   margin-top: 0px;
-  border-bottom: 3px solid lightgray;
+  border-bottom: 3px solid rgb(171, 97, 228);
 }
 
 .note-header {
   justify-content: space-between;
   align-items: center;
-  border: 3px solid lightgrey;
+  border: 3px solid rgb(171, 97, 228);
   margin-bottom: 10px;
   font-size: 25px;
 }
+
 .note-header input{
   font-size: 25px;
   border: none;
-
-  
 }
-.note-meta {
+.metaData {
   flex-grow: 1;
   text-align: right;
 }
-
 
 .button{
   display: inline-block;
@@ -167,49 +161,41 @@ textarea {
   height: 40px;
   border:none;
   width: 95px;
-  border-bottom: 3px solid lightgray;
-  
-
+  border-bottom: 3px solid rgb(171, 97, 228);
 }
-
 
 .button:hover{
-  background: lightblue;
+  background: rgb(171, 97, 228);
   color: white;
 }
-
 
 .time{
   height: 20px;
   color: black;
   border: transparent;
   padding-top: 10px;
-  
-
-  
-}
-#date_selector{
-  color: lightgray;
-  height: 20px;
-  width: 20px;
 }
 
-.editor{
+.editing{
   border: none;
 }
-.typer{
+
+.typeStuff{
   border: none;
   padding-top: 0px;
 }
-#date_selector{
+
+#dateSelect{
   height: 10px;
   font-size: 20px;
   width: 250px;
   color: black;
 }
 
-.toggle_button{
+.sidebarButton{
   cursor: pointer;
+  border: none;
+  padding-top: 5px;
 }
 
 #edit{
