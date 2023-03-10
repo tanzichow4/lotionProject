@@ -52,11 +52,11 @@ const Main = ({ activeNote, onUpdateNote, onDeleteNote}) => {
                     
                     <span id = "bottomSpace">
                         {editMode ? 
-                            <button className="button" onClick={SaveClick}>Save</button>
+                            <button id = "saveButton" className="button" onClick={SaveClick}>Save</button>
                         :
-                            <button className="button" onClick={EditClick}>Edit</button>
+                            <button id = "editButton" className="button" onClick={EditClick}>Edit</button>
                         }
-                        <button className="button" onClick={DeleteClick}>Delete</button>
+                        <button id = "deleteButton" className="button" onClick={DeleteClick}>Delete</button>
                         </span>
                     </span>
                     
